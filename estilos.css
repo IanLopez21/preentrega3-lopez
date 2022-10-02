@@ -9,9 +9,9 @@ body{
     margin: 0;
 }
 header{
-    background-color: rgb(208, 20, 20);
+    background: linear-gradient(30deg, #df0155, #ed4901);
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
     position: fixed;
     width: 100%;
@@ -22,20 +22,20 @@ header{
 a{
     text-decoration: none;
     color: black;
-    width: max-content;
+    
 }
 
 .logo{
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin: 0 30px 0 30px;
 }
 
 nav a{
     font-size: 20px;
-    font-weight: 600;
-    padding-right: 30px;
-    width: max-content;
+    font-weight: 500;
+    padding-right: 20px;
+    
    
 }
 
@@ -50,9 +50,19 @@ nav a:hover{
     margin-right: 10px;
 }
 
+.tonggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+
 main{
     background-color: rgb(93, 30, 102);
-    padding: 90px 20px 0;
+    padding: 90px 20px  30px 20px;
 }
 
 main div{
@@ -63,27 +73,35 @@ footer{
     background-color: rgb(208, 20, 20);
     display: flex;
     justify-content: space-around;
-    position: fixed;
     width: 100%;
-    bottom: 0;  
+    bottom: 0;
+    position: relative;
+
 }
+
+
 
 
 
 /*MediaAquaries*/ 
 
-@media (max-with: 700px){
+@media (max-width: 768px) {
     header{
+        background: linear-gradient(30deg, #df0155, #ed4901);
+        display: flex;
         flex-direction: column;
-
     }
-    nav{
-        padding: 10px 0px;
-    }
-}
+    nav a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        
 
-@media (min-with: 700px){
-    main{
-        background-color: black;
+       
+    }
+    .tonggle{
+       display: block;
     }
 }
