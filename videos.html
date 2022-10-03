@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilos.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Videos | Kreon Web</title>
         <link rel="shortcut icon" href="imgs/logoof.png"/>
+        <link rel="stylesheet" href="estilos.css" />
+        <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+        <script defer src="index.js"></script>
+        <meta name="description" content="#">
+        <meta name="keywors" content="kreon yt, kreon, resident evil 4 remake filtraicones, playstation, xbox, pc gamers, resident evil 4">
     </head>
-    
+
     <body>
-        <header>
-            <a href="inicio.html" class="logo">
+        <header class="header">
+            <nav class="nav">
+              <a href="inicio.html" class="logo nav-link">
                 <img src="imgs/KREON WEB (1).png" alt="Logo de la pagina">
-            </a>
-            <nav>
-                <a href="inicio.html" class="nav-link">Inicio</a>
-                <a href="videos.html" class="nav-link">Videos</a>
-                <a href="juego.html" class="nav-link">Juegos</a>
-                <a href="canal.html" class="nav-link">Canal</a>
+              </a>
+              <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+              </button>
+              <ul class="nav-menu">
+                <li class="nav-menu-item">
+                  <a href="inicio.html" class="nav-menu-link nav-link">Inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="videos.html" class="nav-menu-link nav-link">Videos</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="juego.html" class="nav-menu-link nav-link">Juegos</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="canal.html" class="nav-menu-link nav-link">Canal</a>
+                </li>
+                <li class="nav-menu-item">
+                  <a href="acercade.html" class="nav-menu-link nav-link">Acerca de</a>
+                </li>
+              </ul>
             </nav>
-        </header>
+          </header>
+
         <main>
             <div>
-                <h1>Contenido del Canal</h1>
+                <img class="presentacion" src="imgs/Videos.png" alt="Presentacion">
             </div>
             <div class="video">
-                <iframe width="250" height="140" src="https://www.youtube.com/embed/WjY81mn4Hu8" title="3 DEMOS de RESIDENT EVIL 4 REMAKE - Nuevas Filtraciones y Detalles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="250" height="140" src="https://www.youtube.com/embed/5dtCCoXt8bk" title="HAN ELIMINADO COSAS!!! - FILTRACIONES de Resident Evil 4 Remake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="250" height="140" src="https://www.youtube.com/embed/gZitywHbblQ" title="NUEVAS FILTRACIONES de Resident Evil 9 - Enemigos, Personajes, Villano" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="250" height="140" src="https://www.youtube.com/embed/zxmpQWgcI68" title="COMO SERA RESIDENT EVIL 4 REMAKE? - Analisis y Comparaciones!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div>
-                <h1>Directos</h1>
-            </div>
-            <div>
-                <h1>Comunidad</h1>
+                <iframe class="vid" width="250" height="140" src="https://www.youtube.com/embed/WjY81mn4Hu8" title="3 DEMOS de RESIDENT EVIL 4 REMAKE - Nuevas Filtraciones y Detalles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" width="250" height="140" src="https://www.youtube.com/embed/5dtCCoXt8bk" title="HAN ELIMINADO COSAS!!! - FILTRACIONES de Resident Evil 4 Remake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" width="250" height="140" src="https://www.youtube.com/embed/gZitywHbblQ" title="NUEVAS FILTRACIONES de Resident Evil 9 - Enemigos, Personajes, Villano" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vid" width="250" height="140" src="https://www.youtube.com/embed/zxmpQWgcI68" title="COMO SERA RESIDENT EVIL 4 REMAKE? - Analisis y Comparaciones!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </main>
         <footer>

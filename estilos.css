@@ -1,107 +1,188 @@
-/*Fuentes para la Pagina*/
-
-
-
-/*Elementos Editados*/
-
-body{
-    font-family: sans-serif;
-    margin: 0;
+/*FUENTES*/
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: url(font/RobotoCondensed-Regular.ttf);
 }
-header{
+
+@font-face {
+font-family: "RobotoCondensed-Light";
+src: url(font/RobotoCondensed-Light.ttf);
+
+}
+
+@font-face {
+font-family: "RobotoCondensed-Bold";
+src: url(font/RobotoCondensed-Bold.ttf);
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+
+  }
+  
+  .header {
     background: linear-gradient(30deg, #df0155, #ed4901);
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+    height: 80px;
     position: fixed;
     width: 100%;
     top: 0;
-}
-
-
-a{
-    text-decoration: none;
-    color: black;
-    
-}
-
-.logo{
+    left: 0;
+  }
+  
+  .nav {
     display: flex;
-    align-items: center;
-    margin: 0 30px 0 30px;
-}
-
-nav a{
-    font-size: 20px;
-    font-weight: 500;
-    padding-right: 20px;
-    
-   
-}
-
-nav a:hover{
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
     color: white;
-    transition: 0.5s;
-}
-
-
-.logo img{
-    height: 50px ;
+    text-decoration: none;
+  }
+  
+  .logo img{
+    height: 70px ;
     margin-right: 10px;
 }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover{
+    background-color: grey;
+    transition: 0.5s;
+  }
 
-.tonggle{
+  footer{
+    background-color: #df0155;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+  }
+  
+  .contendio{
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+  }
+
+.presentacion{
+    width: 100%;
+    margin-top: -10px;
+    right: 0;
+    left: 0;
+  }
+  
+/* TOGGLE */
+
+  .nav-toggle {
     color: white;
     background: none;
     border: none;
-    font-size: 30px;
-    padding: 0 20px;
+    font-size: 25px;
+    padding: 0 20px 25px;
     line-height: 60px;
+    cursor: pointer;
     display: none;
-}
+  }
 
-main{
-    background-color: rgb(93, 30, 102);
-    padding: 90px 20px  30px 20px;
-}
+  
 
-main div{
-    display: grid;
-}
+  /*VIDEOS*/
 
-footer{
-    background-color: rgb(208, 20, 20);
+.video{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    width: 100%;
-    bottom: 0;
-    position: relative;
+    height: 800px;
+  }
+.vid{
+    width: 85%;
+    height: 190px;
 
 }
-
-
-
-
-
-/*MediaAquaries*/ 
-
-@media (max-width: 768px) {
-    header{
-        background: linear-gradient(30deg, #df0155, #ed4901);
-        display: flex;
-        flex-direction: column;
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
     }
-    nav a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 40px;
-        
-
-       
+  
+    .header {
+      height: 60px;
     }
-    .tonggle{
-       display: block;
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
     }
-}
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: gray;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover{
+      background: none;
+      color: red;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
