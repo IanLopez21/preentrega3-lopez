@@ -62,22 +62,64 @@ body{
             transition: 0.5s;
     }
 }
+
+main{
+  background-color: rgb(198, 198, 198);
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  width: 100;
+}
+.contenido{
+  margin: 50px 75px 50px 75px;
+  
+}
   
 
   footer{
+    height: 50px;
     background-color: #df0155;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    p{
+      color: white;
+      font-size: 20px;
+    }
   }
   
 .presentacion{
+    position:static;
     width: 100%;
     margin-top: -10px;
     right: 0;
     left: 0;
   }
+
+  .video{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .vid{
+      padding-top: 20px;
+      width: 420px;
+      height: 240px;
+    }
+  }
+
+  .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+      p {
+        
+      }
+  }
+
+  @import "grids";
   
 /* TOGGLE */
 
